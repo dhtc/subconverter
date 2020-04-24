@@ -5,7 +5,6 @@ common:
   insert_url: []
   exclude_remarks: ["(到期|剩余流量|时间|官网|产品)"]
   include_remarks: []
-  default_external_config: "" # config/example_external_config.yml
   clash_rule_base: base/all_base.tpl
   surge_rule_base: base/all_base.tpl
   surfboard_rule_base: base/all_base.tpl
@@ -72,7 +71,7 @@ ruleset:
 
 proxy_group:
   custom_proxy_group:
-#  - {name: UrlTest, type: url-test, rule: [".*"], url: http://www.gstatic.com/generate_204, interval: 300, tolerance: 100, timeout: 5}
+#  - {name: UrlTest, type: url-test, rule: [".*"], url: http://www.gstatic.com/generate_204, interval: 300}
 #  - {name: Proxy, type: select, rule: [".*"]}
 #  - {name: group1, type: select, rule: ["!!GROUPID=0"]}
 #  - {name: v2ray, type: select, rule: ["!!GROUP=V2RayProvider"]}
